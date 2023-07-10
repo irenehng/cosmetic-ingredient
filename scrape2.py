@@ -8,7 +8,7 @@ import csv
 
 driver = webdriver.Chrome()
 
-driver.get("https://ec.europa.eu/growth/tools-databases/cosing/reference/functions/list/ABRASIVE")
+driver.get("https://ec.europa.eu/growth/tools-databases/cosing/reference/functions/list/ABSORBENT")
 driver.implicitly_wait(30)
 table_data = []
 
@@ -42,7 +42,7 @@ while True:
     function = driver.find_element(By.XPATH, "/html/body/app-root/ecl-app/main/div/ng-component/h6/strong[3]").text.lower()
     ingredients = driver.find_elements(By.XPATH,"/html/body/app-root/ecl-app/main/div/ng-component/app-results-subs/table/tbody/tr/td[2]/a")
     for i in ingredients:
-        table_data.append([i.text.strip().lower(), "abrasive"])
+        table_data.append([i.text.strip().lower(), "absorbent"])
         print(i.text)
     
     try:
