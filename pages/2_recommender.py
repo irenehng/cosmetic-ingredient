@@ -23,8 +23,8 @@ def load_df(url):
 input_vectorizer = load_jl("vectorizer.joblib")
 prod_vectorizer = load_jl("rec_vectorizer.joblib")
 prod_matrix = load_jl("rec_matrix.joblib")
-prods = load_df("../data/cosmetics.csv")
-ingredients = load_df("../data/ingredients.csv")
+prods = load_df("data/cosmetics.csv")
+ingredients = load_df("data/ingredients.csv")
 tfidf_matrix = load_jl("tfidf_matrix.joblib")
 
 

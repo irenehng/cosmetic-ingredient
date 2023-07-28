@@ -6,6 +6,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import re
 import plotly.express as px
+import os
+
 
 reader = easyocr.Reader(["en"])
 tfidf_matrix = load("tfidf_matrix.joblib")
@@ -17,7 +19,7 @@ def load_data(url):
     return pd.read_csv(url)
 
 
-ingredients = load_data("../data/ingredients.csv")
+ingredients = load_data("data/ingredients.csv")
 
 
 def get_matching_ing(user_ingredients):
