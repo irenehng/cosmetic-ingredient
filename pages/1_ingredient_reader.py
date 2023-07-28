@@ -60,7 +60,6 @@ upload_img = st.file_uploader(
 )
 if upload_img is not None:
     image = Image.open(upload_img)
-    st.image(image, caption="Uploaded Label", use_column_width=True)
     results = reader.readtext(image)
     user_ings = [r[1] for r in results]
     matching_ings = get_matching_ing(user_ings)
