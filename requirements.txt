@@ -3,5 +3,5 @@ easyocr
 pillow
 pandas
 plost
-sklearn
+scikit-learn
 joblib
