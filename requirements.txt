@@ -2,6 +2,6 @@ streamlit
 easyocr
 pillow
 pandas
-plost
 scikit-learn
 joblib
+plotly
