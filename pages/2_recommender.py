@@ -60,9 +60,11 @@ def get_recs(target, n=5):
 st.header(
     "Get product recommendations based on the ingredient list of your favorite product!"
 )
-skin_type = st.radio(
+col1, col2 = st.columns(2)
+skin_type = col1.radio(
     "Pick your skin type", ["Combination", "Dry", "Oily", "Normal", "Sensitive"]
 )
+n = col2.slider("How many product recommendations do you want?", 1, 15)
 upload_img = st.file_uploader(
     "Upload an image of a product label", type=["jpg", "jpeg", "png"]
 )
@@ -70,5 +72,5 @@ if upload_img is not None:
     image = Image.open(upload_img)
     st.header("Product Recs For You:")
     matching_ings = get_matching_ing(image)
-    recs = get_recs(matching_ings)
-    st.dataframe(recs)
+    recs = get_recs(matching_ings, n)
+    st.dataframe(recs, hide_index=True)
