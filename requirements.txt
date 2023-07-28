@@ -1,0 +1,7 @@
+streamlit
+easyocr
+pillow
+pandas
+plost
+sklearn
+joblib
