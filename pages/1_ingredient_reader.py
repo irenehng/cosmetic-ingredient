@@ -8,10 +8,8 @@ import re
 import plotly.express as px
 
 reader = easyocr.Reader(["en"])
-tfidf_matrix = load(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/tfidf_matrix.joblib"
-)
-vectorizer = load("/Users/irenenguyen/Desktop/cosmetic-ingredient/vectorizer.joblib")
+tfidf_matrix = load("../tfidf_matrix.joblib")
+vectorizer = load("../vectorizer.joblib")
 
 
 @st.cache_data
@@ -19,9 +17,7 @@ def load_data(url):
     return pd.read_csv(url)
 
 
-ingredients = load_data(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/data/ingredients.csv"
-)
+ingredients = load_data("../data/ingredients.csv")
 
 
 def get_matching_ing(user_ingredients):
