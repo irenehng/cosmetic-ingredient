@@ -20,20 +20,12 @@ def load_df(url):
     return pd.read_csv(url)
 
 
-input_vectorizer = load_jl(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/vectorizer.joblib"
-)
-prod_vectorizer = load_jl(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/rec_vectorizer.joblib"
-)
+input_vectorizer = load_jl("vectorizer.joblib")
+prod_vectorizer = load_jl("rec_vectorizer.joblib")
 prod_matrix = load_jl("rec_matrix.joblib")
-prods = load_df("/Users/irenenguyen/Desktop/cosmetic-ingredient/data/cosmetics.csv")
-ingredients = load_df(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/data/ingredients.csv"
-)
-tfidf_matrix = load_jl(
-    "/Users/irenenguyen/Desktop/cosmetic-ingredient/tfidf_matrix.joblib"
-)
+prods = load_df("../data/cosmetics.csv")
+ingredients = load_df("../data/ingredients.csv")
+tfidf_matrix = load_jl("tfidf_matrix.joblib")
 
 
 def get_matching_ing(image):

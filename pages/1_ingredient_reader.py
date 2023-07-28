@@ -8,8 +8,8 @@ import re
 import plotly.express as px
 
 reader = easyocr.Reader(["en"])
-tfidf_matrix = load("../tfidf_matrix.joblib")
-vectorizer = load("../vectorizer.joblib")
+tfidf_matrix = load("tfidf_matrix.joblib")
+vectorizer = load("vectorizer.joblib")
 
 
 @st.cache_data
