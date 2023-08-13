@@ -1,6 +1,7 @@
 # cosmetic-ingredient
 
-Link to the app on Streamlit Cloud: [a](https://cosmetic-ingredient.streamlit.app/)
+[Link](https://cosmetic-ingredient.streamlit.app/) to the app on Streamlit Cloud.
+
 A multi-page Streamlit web app with 2 main pages:
 
 **1. Ingredients reader & function analyzer:**
