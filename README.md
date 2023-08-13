@@ -16,4 +16,5 @@ The photos below shows an example analysis on 2 different products, the 1st bein
 - only show results that are suitable to the user's skintype
 
 Example usage in the photo below. The input photo was a serum by Estee Lauder, and the model recommended some Estee Lauder products in the same line:
+
 <img width="808" alt="Screenshot 2023-08-13 at 14 56 16" src="https://github.com/irenehng/cosmetic-ingredient/assets/113161586/d327d994-36c2-42f4-815b-da4670ac473e" height="650px">
