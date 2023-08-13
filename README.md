@@ -1,6 +1,8 @@
 # cosmetic-ingredient
- 
+
+Link to the app on Streamlit Cloud: [](https://cosmetic-ingredient.streamlit.app/)
 A multi-page Streamlit web app with 2 main pages:
+
 **1. Ingredients reader & function analyzer:**
 - read cosmetic ingredients from the photo of a product label
 - match these ingredients against the dataset that I created by scraping the largest database to date of cosmetic ingredients (more info below)
